@@ -270,6 +270,15 @@ $ bin/dry-run.rb go_modules rsc/quote
 ...
 ```
 
+### Inspecting a file or directory
+
+Use `bin/inspect_file.rb` to inspect a file or an entire directory tree and print a JSON summary of the detected file
+type, main classes/functions, and likely issues:
+
+```bash
+$ bin/inspect_file.rb common/lib/dependabot/file_inspector.rb
+```
+
 ### Helpful options to speed up dry-run testing
 
 The [Dry-Run script](#dry-run-script) supports many other options, all of which are documented at the [top of the script's source code](bin/dry-run.rb). For example:
